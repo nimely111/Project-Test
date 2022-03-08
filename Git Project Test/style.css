@@ -1,4 +1,4 @@
-body{
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -9,23 +9,27 @@ a:link, a:visited {
     text-decoration: none;
 }
 
-#social{
+/* #social{
     width: 250px;
     margin: auto;
-    cursor: pointer
+} */
+
+header{
+    background-color: rgb(21, 126, 113);
+    padding: 3em;
+    color:  #fff;
+    margin-bottom: 1em;
 }
+
+
 #social img{
    height: 50px;
    width: 50px;
    margin-bottom: 2em;
    margin-right: 1em;
+   cursor: pointer;
 }
 
-
-header{
-    background-color: rgb(64, 97, 93);
-    padding: 3em;
-}
 
 /* work  */
 
@@ -33,22 +37,40 @@ header{
     margin-bottom: 1em;
 }
 
-.show-case{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+#show-case{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
 }
 
-.show-case div{
+.box{
     position: relative;
-    background: red;
-    height: 200px;
     flex-basis: 200px;
+    height: 200px;
     margin-right: 1em;
     margin-bottom: 1em;
+
 }
 
-.show-case div::before,
+ .box-1{
+    background-color:red;
+}
+
+.box-2{
+    background-color:red;
+}
+
+.box-3{
+    background-color: red;
+}
+
+.box-4{
+    background-color: red;
+} 
+
+
+
+/* .show-case div::before,
 .show-case div::after{
     position: absolute;
     content: " ";
@@ -59,15 +81,25 @@ header{
 
 .show-case div::before{
     left: 0;
-    right: 0;
-}
+    right: 0; 
+}*/
 
-.show-case span{
-    position: absolute;
-    left: 25%;
-    bottom: 0;
-    color: #fff;
-    font-size: 18px;
+ .box span{
+  position: absolute;
+  bottom: 0;
+  font-size: 17px;
+  left: 1%;
+  background-color: #800000;
+  color: #fff;
+  font-weight: bold;
+  /* padding: 5px 50px 5px 50px; */
+  height: 30px;
+  width: 99%;
+} 
+
+.box span:hover{
+    cursor: pointer;
+  text-decoration: underline;
 }
 
 
